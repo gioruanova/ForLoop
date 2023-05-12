@@ -22,8 +22,9 @@ public class ArraysPractica {
         }
 
         System.out.println("--------\nSus productos son:");
-        for (int i = 0; i < productosRegistrados.length; i++) {
-            System.out.println(productosRegistrados[i]);
+        for (String productosRegistrado : productosRegistrados) {
+            System.out.println(productosRegistrado);
+
         }
     }
 }
