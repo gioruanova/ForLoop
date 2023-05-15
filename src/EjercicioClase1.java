@@ -40,9 +40,6 @@ public class EjercicioClase1 {
 //            } while (numero >= 0);
 
 
-
-
-        //pedir un nro entre 0 y 999 y decir si es capicua, pero de 4 nros
         String uni = "";
         String dec = "";
         String cen = "";
@@ -51,23 +48,24 @@ public class EjercicioClase1 {
 
         if (nro_ingresado.length() == 3) {
             cen = String.valueOf(nro_ingresado.charAt(0));
-            dec = String.valueOf(nro_ingresado.charAt(1));
             uni = String.valueOf(nro_ingresado.charAt(2));
 
-                    if (uni.equals(cen)) {
-                        System.out.println("numero es capicua");
-                    } else {
-                        System.out.println("numero no es capicua");
-                    }
+            if (uni.equals(cen)) {
+                System.out.println("numero es capicua");
+            } else {
+                System.out.println("numero no es capicua");
+            }
 
         } else if (nro_ingresado.length() == 2) {
             dec = String.valueOf(nro_ingresado.charAt(1));
             uni = String.valueOf(nro_ingresado.charAt(0));
-                    if (uni.equals(dec)) {
-                        System.out.println("numero es capicua");
-                    } else {
-                        System.out.println("numero no es capicua");
-                    }
+            if (uni.equals(dec)) {
+                System.out.println("numero es capicua");
+            } else {
+                System.out.println("numero no es capicua");
+            }
+        } else if (nro_ingresado.length() > 3) {
+            System.out.println("el numero debe ser entre 0 y 999");
         } else {
             System.out.println("nro no capicua");
         }
