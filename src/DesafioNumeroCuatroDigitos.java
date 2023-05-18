@@ -14,7 +14,7 @@ public class DesafioNumeroCuatroDigitos {
         nroValidador = Integer.parseInt(nro_ingresado);
 
         while (nroValidador <= 999 || nroValidador > 9999) {
-            nroValidador = Integer.parseInt(nro_ingresado);
+
             nro_ingresado = JOptionPane.showInputDialog(null, "2 - Ingrese un número de 4 dígitos:");
             nroValidador = Integer.parseInt(nro_ingresado);
         }
