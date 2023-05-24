@@ -19,10 +19,10 @@ public class TesteandoHeladera {
             precioProducto = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese el precio del producto"));
             totalCompra = totalCompra + precioProducto;
 
-            unirProductos = unirProductos + ingresoProductos + " - $" + precioProducto + ";";
+            unirProductos = unirProductos + ingresoProductos + " - $" + precioProducto + "@#@";
         }
 
-        String[] productostotales = unirProductos.split(";");
+        String[] productostotales = unirProductos.split("@#@");
 
         System.out.println("-----------------");
         System.out.println("El listado de sus productos es:");
